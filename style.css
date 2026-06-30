@@ -1,0 +1,299 @@
+/* ==========================
+   Emma Productions
+   style.css
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background: #111;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid gold;
+}
+
+.logo {
+    font-size: 32px;
+    color: gold;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: .3s;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* HERO */
+
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    font-size: 60px;
+    color: gold;
+}
+
+#hero p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: gold;
+    color: #000;
+    padding: 15px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+/* SECTION */
+
+section {
+    padding: 100px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+/* PRODUCTS */
+
+#products {
+    background: #111;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #1b1b1b;
+    border: 1px solid gold;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px gold;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3 {
+    text-align: center;
+    color: gold;
+    margin-top: 15px;
+}
+
+.card p {
+    text-align: center;
+    padding: 10px;
+}
+
+.card button {
+    width: 90%;
+    margin: 15px auto;
+    display: block;
+    padding: 12px;
+    background: gold;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card button:hover {
+    background: #fff;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+}
+
+/* TESTIMONIALS */
+
+.testimonial {
+    background: #111;
+    padding: 25px;
+    border-left: 5px solid gold;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+
+#contact {
+    text-align: center;
+}
+
+.contact-icons {
+    margin-top: 30px;
+}
+
+.contact-icons a {
+    color: gold;
+    font-size: 35px;
+    margin: 15px;
+    transition: .3s;
+}
+
+.contact-icons a:hover {
+    color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+    background: #111;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid gold;
+}
+
+footer h3 {
+    color: gold;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social a {
+    color: gold;
+    font-size: 30px;
+    margin: 12px;
+    transition: .3s;
+}
+
+.social a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* WhatsApp Floating */
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    z-index: 1000;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero p {
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+}

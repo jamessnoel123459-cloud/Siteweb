@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ht">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma Productions</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Emma Productions</div>
+
+        <nav>
+            <a href="#hero">Acceuil</a>
+            <a href="#products">Produits</a>
+            <a href="#testimonials">Commentaire</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <h1>Emma Productions</h1>
+        <p>Siwo • Pwoteyin • Poud Lèt • Manba</p>
+        <a href="#products" class="btn">Achte Kounye a</a>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+        <h2>Pwodwi Nou Yo</h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+                <img src="IMG-20260627-WA0011.jpg" alt="Siwo">
+                <h3>Siwo</h3>
+                <p>Bon kalite siwo natirèl pou enèji ak gou.</p>
+                <button>Achte sou WhatsApp</button>
+            </div>
+
+            <div class="card">
+                <img src="IMG-20260627-WA0012.jpg" alt="Pwoteyin">
+                <h3>Pwoteyin</h3>
+                <p>Pou fòs, misk, ak enèji chak jou.</p>
+                <button>Achte sou WhatsApp</button>
+            </div>
+
+            <div class="card">
+                <img src="images.jpeg" alt="Poud Lèt">
+                <h3>Poud Lèt</h3>
+                <p>Bon kalite poud lèt pou fanmi ou.</p>
+                <button>Achte sou WhatsApp</button>
+            </div>
+
+            <div class="card">
+                <img src="mamba-1.jpg" alt="Manba">
+                <h3>Manba</h3>
+                <p>Manba natirèl, bon gou ak nourisan.</p>
+                <button>Achte sou WhatsApp</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ORDER SECTION -->
+    <section id="order">
+        <h2>Pase Kòmann Ou</h2>
+
+        <div class="order-box">
+
+            <label>Chwazi pwodwi</label>
+            <select id="product">
+                <option value="Siwo">Siwo</option>
+                <option value="Pwoteyin">Pwoteyin</option>
+                <option value="Poud Lèt">Poud Lèt</option>
+                <option value="Manba">Manba</option>
+            </select>
+
+            <label>Non ou</label>
+            <input type="text" id="name" placeholder="Ekri non ou">
+
+            <label>Telefòn</label>
+            <input type="text" id="phone" placeholder="509...">
+
+            <label>Kantite</label>
+            <input type="number" id="qty" value="1">
+
+            <button onclick="addOrder()">Ajoute nan lis kòmann</button>
+        </div>
+
+        <h3>Kòmann ou yo</h3>
+        <ul id="orderList"></ul>
+
+        <button onclick="sendWhatsApp()" class="btn">
+            Voye kòmann sou WhatsApp
+        </button>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <h2>Temwayaj Kliyan</h2>
+
+        <div class="testimonial">
+            "Emma Productions gen pi bon pwodwi yo! Siwo a trè bon."
+        </div>
+
+        <div class="testimonial">
+            "Pwoteyin lan ban mwen plis fòs chak jou."
+        </div>
+
+        <div class="testimonial">
+            "Mwen renmen manba a, li natirèl anpil."
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Kontakte Nou</h2>
+
+        <p>Ekri nou dirèk sou rezo sosyal yo:</p>
+
+        <div class="contact-icons">
+
+            <a href="https://wa.me/509XXXXXXXX" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>Emma Productions</h3>
+        <p>Siwo • Pwoteyin • Poud Lèt • Manba</p>
+
+        <p>📞 +509 3693 3864</p>
+
+        <div class="social">
+
+            <a href="https://wa.me/509XXXXXXXX"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+
+        <p>© 2026 Emma Productions - Tout dwa rezève.</p>
+
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/50940115376" class="whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
